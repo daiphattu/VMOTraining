@@ -1,17 +1,22 @@
 package com.spring.demo.dto;
 
+import com.spring.demo.entities.Book;
+
+import java.util.List;
+
 public class AuthorDTO {
-    private Long authorId;
+    private String authorId;
     private String authorName;
     private String birthDate;
     private Double phoneName;
     private String email;
 
-    public Long getAuthorId() {
+    private List<Book> bookList;
+    public String getAuthorId() {
         return authorId;
     }
 
-    public void setAuthorId(Long authorId) {
+    public void setAuthorId(String authorId) {
         this.authorId = authorId;
     }
 

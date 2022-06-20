@@ -9,7 +9,7 @@ import java.util.List;
 @Document(collection = "author")
 public class Author {
     @Id
-    private Long id;
+    private String id;
     @Field(name = "author_name")
     private String authorName;
     @Field(name = "birth_date")
@@ -24,11 +24,11 @@ public class Author {
     public Author() {
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
